@@ -12,6 +12,10 @@
           "NodeInstance": "LDCInstance0"
       },
       {
+          "NodeName": "com.xiaomi.plugin.bodyslim",
+          "NodeInstance": "BodySlimInstance0"
+      },
+      {
           "NodeName": "com.xiaomi.plugin.skinbeautifier",
           "NodeInstance": "SkinBeautifierInstance0"
       }
@@ -43,6 +47,16 @@
         "SrcPort": {
             "PortId": 0,
             "NodeInstance": "LDCInstance0"
+        },
+        "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "BodySlimInstance0"
+        }
+      },
+      {
+        "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "BodySlimInstance0"
         },
         "DstPort": {
             "PortId": 0,

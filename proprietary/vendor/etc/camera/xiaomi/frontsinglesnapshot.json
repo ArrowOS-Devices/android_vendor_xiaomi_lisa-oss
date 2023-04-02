@@ -17,6 +17,10 @@
       {
           "NodeName": "com.qcom.plugin.gpu",
           "NodeInstance": "GpuInstance0"
+      },
+      {
+          "NodeName": "com.xiaomi.plugin.dc",
+          "NodeInstance": "DistortionCorrectionInstance0"
       }
     ]
   },
@@ -49,8 +53,18 @@
           },
           "DstPort": {
               "PortId": 0,
-              "NodeInstance": "SkinBeautifierInstance0"
+              "NodeInstance": "DistortionCorrectionInstance0"
           }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "DistortionCorrectionInstance0"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SkinBeautifierInstance0"
+        }
       },
       {
           "SrcPort": {
